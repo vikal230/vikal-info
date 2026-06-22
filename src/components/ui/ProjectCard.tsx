@@ -135,56 +135,6 @@ export function ProjectCard({
         </motion.a>
       </div> */}
 
-      {/* Actions */}
-      <div className="flex flex-wrap gap-3 pt-1 mt-auto">
-        <motion.a
-          href={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.04, y: -1 }}
-          whileTap={{ scale: 0.97 }}
-          className="flex-1 min-w-[120px] flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium text-white shadow-lg transition-all"
-          style={{
-            background: `linear-gradient(135deg, ${project.accent}, ${project.accent}bb)`,
-            boxShadow: `0 4px 20px ${project.accent}35`,
-          }}
-        >
-          <ExternalLink size={14} />
-          {project.adminUrl ? "Customer Site" : "Live Demo"}
-        </motion.a>
-
-        {project.adminUrl && (
-          <motion.a
-            href={project.adminUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.04, y: -1 }}
-            whileTap={{ scale: 0.97 }}
-            className="flex-1 min-w-[120px] flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium border text-white shadow-lg transition-all"
-            style={{
-              background: `linear-gradient(135deg, #ec4899, #be185d)`,
-              borderColor: `#ec4899`,
-              boxShadow: `0 4px 20px rgba(236, 72, 153, 0.35)`,
-            }}
-          >
-            <ExternalLink size={14} />
-            Admin Panel
-          </motion.a>
-        )}
-
-        {/* Source Code Button */}
-        <motion.a
-          href={project.sourceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.04, y: -1 }}
-          whileTap={{ scale: 0.97 }}
-          className="flex-1 min-w-[120px] flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-medium border border-[var(--border)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--text-muted)] transition-colors"
-        >
-          <Github size={14} />
-          Source Code
-        </motion.a>
-      </div>
 
       {/* Actions */}
       <div className="flex flex-wrap gap-3 pt-1 mt-auto">
