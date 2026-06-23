@@ -186,7 +186,7 @@ export const EDUCATION = {
   degree: "Bachelor of Computer Applications (BCA)",
   university: "IFTM University",
   period: "2023 – 2026",
-  cgpa: "7.45 / 10",
+  cgpa: "7.75 / 10",
   subjects: [
     "Data Structures",
     "Web Development",
